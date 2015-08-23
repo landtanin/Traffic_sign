@@ -12,4 +12,9 @@ public class MyAdapter {
     private int[] trafficInts;
     private String[] trafficStrings;
 
+    public MyAdapter(Context objContext, int[] trafficInts, String[] trafficStrings) {
+        this.objContext = objContext;
+        this.trafficInts = trafficInts;
+        this.trafficStrings = trafficStrings;
+    }
 } //Main class
