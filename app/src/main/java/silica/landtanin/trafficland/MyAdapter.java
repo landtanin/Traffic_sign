@@ -1,9 +1,12 @@
 package silica.landtanin.trafficland;
 
 import android.content.Context;
+import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
+import android.widget.ImageView;
+import android.widget.TextView;
 
 /**
  * Created by landtanin on 8/23/15 AD.
@@ -38,6 +41,18 @@ public class MyAdapter extends BaseAdapter{
 
     @Override
     public View getView(int i, View view, ViewGroup viewGroup) {
-        return null;
-    }
+
+        LayoutInflater objLayoutInflater = (LayoutInflater) objContext.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+        View view1 = objLayoutInflater.inflate(R.layout.my_listview, viewGroup, false);
+
+        //show Icon
+        ImageView iconImageView = (ImageView) view1.findViewById(R.id.imvShowIcon);
+        iconImageView.setBackgroundResource(trafficInts[i]);
+
+        //show Title
+        TextView titleTextView = (TextView) view1.findViewById(R.id.txtShowTitle);
+        titleTextView.setText(trafficStrings[i]);
+
+        return view1;
+    }// getView
 } //Main class

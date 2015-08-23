@@ -6,7 +6,7 @@
     <ImageView
         android:layout_width="@dimen/icon"
         android:layout_height="@dimen/icon"
-        android:id="@+id/imvShowTitle"
+        android:id="@+id/imvShowIcon"
         android:layout_margin="@dimen/my_margin" />
 
     <TextView
