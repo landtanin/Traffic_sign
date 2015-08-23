@@ -24,6 +24,7 @@
         android:id="@+id/listView"
         android:layout_below="@+id/txtTitle"
         android:layout_above="@+id/button"
-        android:layout_margin="20dp" />
+        android:layout_margin="20dp"
+        android:background="#78ffd5c6" />
 
 </RelativeLayout>
