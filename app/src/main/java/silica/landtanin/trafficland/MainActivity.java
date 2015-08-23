@@ -1,10 +1,14 @@
 package silica.landtanin.trafficland;
 
+import android.content.Intent;
+import android.net.Uri;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+
+import java.net.URL;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -15,6 +19,9 @@ public class MainActivity extends AppCompatActivity {
     } //Main Method
 
     public void clickAboutMe(View view) {
+        Intent objIntent = new Intent(Intent.ACTION_VIEW);
+        objIntent.setData(Uri.parse("https://github.com/landtanin/Traffic_sign/commits/master"));
+        startActivity(objIntent);
 
     } //click
 
