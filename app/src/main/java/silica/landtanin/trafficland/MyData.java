@@ -29,7 +29,7 @@ public class MyData {
         strTitle[18] = "ห้ามรถกว้างเกินกำหนด";
         strTitle[19] = "ห้ามรถสูงเกินกำหนด";
 
-        return new String[0];
+        return strTitle;
     }
 
 
