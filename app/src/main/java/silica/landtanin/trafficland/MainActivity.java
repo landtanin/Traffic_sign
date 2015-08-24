@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.ListView;
 
 import java.net.URL;
 
@@ -23,6 +24,14 @@ public class MainActivity extends AppCompatActivity {
     } //Main Method
 
     private void createListView() {
+
+        MyData objMyData = new MyData();
+        int[] intIcon = objMyData.icon();
+        String[] strTitle = objMyData.title();
+
+        MyAdapter objMyAdapter = new MyAdapter(MainActivity.this, intIcon, strTitle);
+        ListView myListView = (ListView) findViewById(R.id.listView);
+        myListView.setAdapter(objMyAdapter);
 
     }
 
