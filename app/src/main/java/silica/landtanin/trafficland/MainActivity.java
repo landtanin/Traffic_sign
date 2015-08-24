@@ -16,7 +16,15 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        //Create ListView
+        createListView();
+
     } //Main Method
+
+    private void createListView() {
+
+    }
 
     public void clickAboutMe(View view) {
         Intent objIntent = new Intent(Intent.ACTION_VIEW);
