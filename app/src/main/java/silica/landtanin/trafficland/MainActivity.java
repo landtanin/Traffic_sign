@@ -33,7 +33,7 @@ public class MainActivity extends AppCompatActivity {
         ListView myListView = (ListView) findViewById(R.id.listView);
         myListView.setAdapter(objMyAdapter);
 
-    }
+    } // createListView
 
     public void clickAboutMe(View view) {
         Intent objIntent = new Intent(Intent.ACTION_VIEW);
