@@ -16,6 +16,8 @@
             android:layout_height="wrap_content"
             android:text="New Text"
             android:id="@+id/textView"
-            android:layout_gravity="center_horizontal" />
+            android:layout_gravity="center_horizontal"
+            android:textStyle="bold"
+            android:textSize="@dimen/h1" />
     </LinearLayout>
 </RelativeLayout>
