@@ -25,5 +25,12 @@
             android:layout_height="@dimen/image"
             android:id="@+id/imageView"
             android:layout_gravity="center_horizontal" />
+
+        <ScrollView
+            android:layout_width="@dimen/image"
+            android:layout_height="@dimen/icon"
+            android:id="@+id/scrollView"
+            android:padding="@dimen/my_margin"
+            android:layout_gravity="center_horizontal" />
     </LinearLayout>
 </RelativeLayout>
