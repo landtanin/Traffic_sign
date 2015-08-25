@@ -38,11 +38,14 @@ public class MainActivity extends AppCompatActivity {
         myListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-
+                myIntentToDetail(i);
             }
         });
 
     } // createListView
+
+    private void myIntentToDetail(int i) {
+    }
 
     public void clickAboutMe(View view) {
         Intent objIntent = new Intent(Intent.ACTION_VIEW);
