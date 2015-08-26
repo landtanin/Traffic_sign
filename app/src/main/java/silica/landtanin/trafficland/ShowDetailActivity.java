@@ -24,6 +24,10 @@ public class ShowDetailActivity extends AppCompatActivity {
 
     private void bindWidget() {
 
+        showTitleTextView = (TextView) findViewById(R.id.txtTitleDetail);
+        showDetailTextView = (TextView) findViewById(R.id.txtDetail);
+        showTrafficImageView = (ImageView) findViewById(R.id.imvTrafficDetail);
+
     } // bind widget
 
     @Override
