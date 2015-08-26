@@ -44,9 +44,9 @@ public class MainActivity extends AppCompatActivity {
 
     } // createListView
 
-    private void myIntentToDetail(int i) {
+    private void myIntentToDetail(int intclick) {
         Intent objIntent = new Intent(MainActivity.this, ShowDetailActivity.class);
-        objIntent.putExtra("click", i);
+        objIntent.putExtra("click", intclick);
         startActivity(objIntent);
 
     } // myIntentToDetail
