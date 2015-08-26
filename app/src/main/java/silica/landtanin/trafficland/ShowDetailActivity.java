@@ -27,6 +27,14 @@ public class ShowDetailActivity extends AppCompatActivity {
 
     private void showWidget() {
 
+        //Receive from Intent
+        int intClick = getIntent().getIntExtra("click", 0);
+
+        //show Title
+        MyData objMyData = new MyData();
+        String[] strTitle = objMyData.title();
+        showTitleTextView.setText(strTitle[intClick]);
+
     } // show widget
 
     private void bindWidget() {
