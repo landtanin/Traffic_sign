@@ -26,7 +26,7 @@ public class MyAdapter extends BaseAdapter{
 
     @Override
     public int getCount() {
-        return 0;
+        return trafficStrings.length;
     }
 
     @Override
