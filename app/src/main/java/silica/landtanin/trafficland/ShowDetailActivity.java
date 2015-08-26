@@ -17,7 +17,14 @@ public class ShowDetailActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_show_detail);
+
+        // Bind widget
+        bindWidget();
     } // onCreate
+
+    private void bindWidget() {
+
+    } // bind widget
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
