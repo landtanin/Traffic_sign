@@ -20,7 +20,14 @@ public class ShowDetailActivity extends AppCompatActivity {
 
         // Bind widget
         bindWidget();
+
+        // Show widget
+        showWidget();
     } // onCreate
+
+    private void showWidget() {
+
+    } // show widget
 
     private void bindWidget() {
 
